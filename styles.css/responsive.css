@@ -237,9 +237,7 @@
         grid-template-columns: repeat(1,1fr);
     }
     .show-blogs{
-        display: inline-block;
-        margin-top: 4rem;
-
+        display: none;
     }
     footer{
         padding: 1.5rem 1.25rem;
