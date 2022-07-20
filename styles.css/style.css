@@ -13,6 +13,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    /* css debug */
     /* outline: 3px solid lightgreen !important; */
 }
 
@@ -232,11 +233,12 @@ header{
     text-decoration: none;
     color: #B9B9B9;
     margin: 3rem 1rem 0;
-    transition: color 0.3s ease;
+    transition: all 0.3s ease;
  }
 
 .footer-links a:hover,.linkSocial:hover{
     color: var(--color-secondary);
+    transform: translateY(-5px);
 }
 
 
@@ -245,5 +247,5 @@ header{
     font-size: 2rem;
     color: #B9B9B9;
     margin: 0.5rem;
-    transition: color 0.3s ease;
+    transition: all 0.3s ease;
 }
