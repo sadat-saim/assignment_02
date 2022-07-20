@@ -71,7 +71,18 @@
     }
 }
 
-/* tablet view */
+@media only screen and (max-width: 940px){
+    .header-texts{
+        max-width: 20rem;
+    }
+    .header-img{
+        width: 26rem;
+    }
+}
+
+/*=============
+ tablet view 
+===============*/
 
 @media only screen and (max-width: 768px) {
     h1,h2{
@@ -135,7 +146,47 @@
         padding: 4.375rem 5rem;
     }
 }
-/* mobile view */
+
+@media only screen and (max-width: 740px){
+    header{
+        padding: 3rem 2.5rem;
+    }
+    .header-texts{
+        max-width: 18rem;
+    }
+    .header-img{
+        width: 20rem;
+    }
+    .header-img img{ 
+        bottom: -3rem;
+        
+    }
+}
+@media only screen and (max-width: 720px){
+    header{
+        padding: 3rem 2.5rem;
+    }
+    .header-texts{
+        max-width: 14rem;
+    }
+    .header-texts h1{
+        font-size: 2rem;
+    }
+    .header-img{
+        width: 18rem;
+    }
+    .header-img img{ 
+        bottom: -3rem;
+        
+    }
+    .nav-btn-wrapper a{
+        padding: 1rem 0.5rem;
+        font-size: 1.1rem;
+    }
+}
+/*=============
+ mobile view 
+ ==============*/
 
 @media only screen and (max-width: 576px) {
     h1,h2{
@@ -152,10 +203,11 @@
     }
 
     header{
-        padding: 1.75rem auto;
+        padding: 2.5rem 0;
         padding-bottom: 0rem;
         text-align: center;
         flex-direction: column;
+        margin: 1.5rem auto;
     }
     .header-texts{
         max-width: 14.25rem;
@@ -163,7 +215,7 @@
     .header-img{
         width: 14.56rem;
         margin: 1.3125rem auto 0rem;
-        bottom: -0.2rem;
+        bottom: -0.43rem;
     }
     .header-img img{ 
         position: static;
@@ -173,21 +225,16 @@
     .blogs-btns-wrapper{
         flex-direction: column;
         align-items: center;
+        margin: -1.3rem 0rem;
     }
     .nav-btn-wrapper {
-        display: grid;
-        grid-template-columns: repeat(3,1fr);
-        column-gap: 1.375rem;
+        display: block;
         width: 100%;
-        padding: 0;
-        background: none;
+        margin-bottom: 1.5rem;
+
     }
-    .nav-btn-wrapper a{
-        max-height: 4rem;
-        padding: 1rem 1rem;
-    }
-    .cards-wrapper{
-        margin-left: 0rem;
+    .cards{
+        grid-template-columns: repeat(1,1fr);
     }
     .show-blogs{
         display: inline-block;
@@ -195,6 +242,15 @@
 
     }
     footer{
-        padding: 4.375rem 5rem;
+        padding: 1.5rem 1.25rem;
+    }
+    footer h2{
+        margin-bottom: 1.5rem;
+    }
+    .footer-links{
+        flex-direction: column;
+    }
+    .footer-links a{
+        margin: 2rem 0 0;
     }
 }
